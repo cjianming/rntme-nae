@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the code and the paper below."
+title: "RNTME-NAE: reference implementation of a task-level evaluation protocol for black-box attacks on vehicular perception"
+abstract: >-
+  Reference implementation of the RNTME-NAE ensemble gradient attack together with a
+  layered evaluation protocol that separates targets used to generate an adversarial
+  perturbation from targets that never take part. Ships the GTSRB transfer benchmark
+  (eight attack methods, five seeds), the consequence-weighted metrics SW-ASR and DMR
+  with their 43x43 semantic weight matrix, an object-detection extension and a suite of
+  input-level defences evaluated under BPDA adaptive attacks. The headline result is a
+  negative one: on a target that shares no training pipeline with the surrogates, the
+  eight methods fall inside a narrow band and no comparison survives correction.
+license: MIT
+type: software
+repository-code: "https://github.com/<owner>/rntme-nae"
+keywords:
+  - adversarial examples
+  - transferability
+  - vehicular perception
+  - intelligent transportation systems
+  - traffic sign recognition
+  - object detection
+  - adversarial defence
+  - reproducible evaluation
+authors:
+  - family-names: "Cui"
+    given-names: "Jianming"
+    affiliation: "Chang'an University"
+    email: "cjianming@chd.edu.cn"
+  - family-names: "Liu"
+    given-names: "Ming"
+    affiliation: "National Computer Network Emergency Response Technical Team/Coordination Center of China"
+    email: "liuming@cert.org.cn"
+preferred-citation:
+  type: article
+  title: "Dynamic Ensemble Gradient Attacks for Vehicular Perception: A Task-Level Evaluation Protocol and a Bounded Negative Result"
+  journal: "IEEE Transactions on Intelligent Transportation Systems"
+  year: 2026
+  status: submitted
+  note: "Under review. Replace this entry with the published record once available."

@@ -1,0 +1,158 @@
+{
+  "config": {
+    "mode": "seeds",
+    "size": 64,
+    "n": 8,
+    "bs": 8,
+    "T": 15,
+    "eps255": 16,
+    "alpha255": 2,
+    "mu": 0.9,
+    "B": 5,
+    "tau": 2.0,
+    "beta": 0.7,
+    "sigma": 3.0,
+    "ensemble": "sresnet,svgg",
+    "heldout": "sresnet",
+    "source": "sresnet",
+    "seeds": "0",
+    "attacks": "I-FGSM,RNTME-NAE",
+    "tscan": "5,8,11,15",
+    "out": "cal"
+  },
+  "clean_acc": {
+    "sresnet": 0.875,
+    "svgg": 1.0
+  },
+  "n_samples": 8,
+  "seeds": [
+    0
+  ],
+  "attacks": [
+    "I-FGSM",
+    "RNTME-NAE"
+  ],
+  "ensemble": [
+    "sresnet",
+    "svgg"
+  ],
+  "heldout": [
+    "sresnet"
+  ],
+  "rows": [
+    {
+      "attack": "I-FGSM",
+      "target": "sresnet",
+      "role": "集成内",
+      "clean_acc": 0.875,
+      "ASR": 1.0,
+      "ASR_std": 0.0,
+      "SW-ASR": 0.4375,
+      "SW-ASR_std": 0.0,
+      "DMR": 0.125,
+      "DMR_std": 0.0,
+      "ASR_cond": 1.0,
+      "ASR_cond_std": 0.0,
+      "ms": 790.765792131424
+    },
+    {
+      "attack": "I-FGSM",
+      "target": "svgg",
+      "role": "集成内",
+      "clean_acc": 1.0,
+      "ASR": 0.375,
+      "ASR_std": 0.0,
+      "SW-ASR": 0.225,
+      "SW-ASR_std": 0.0,
+      "DMR": 0.125,
+      "DMR_std": 0.0,
+      "ASR_cond": 0.375,
+      "ASR_cond_std": 0.0,
+      "ms": 790.765792131424
+    },
+    {
+      "attack": "RNTME-NAE",
+      "target": "sresnet",
+      "role": "集成内",
+      "clean_acc": 0.875,
+      "ASR": 1.0,
+      "ASR_std": 0.0,
+      "SW-ASR": 0.5375,
+      "SW-ASR_std": 0.0,
+      "DMR": 0.125,
+      "DMR_std": 0.0,
+      "ASR_cond": 1.0,
+      "ASR_cond_std": 0.0,
+      "ms": 6260.384976863861
+    },
+    {
+      "attack": "RNTME-NAE",
+      "target": "svgg",
+      "role": "集成内",
+      "clean_acc": 1.0,
+      "ASR": 0.875,
+      "ASR_std": 0.0,
+      "SW-ASR": 0.475,
+      "SW-ASR_std": 0.0,
+      "DMR": 0.125,
+      "DMR_std": 0.0,
+      "ASR_cond": 0.875,
+      "ASR_cond_std": 0.0,
+      "ms": 6260.384976863861
+    }
+  ],
+  "tests": [
+    {
+      "target": "sresnet",
+      "role": "集成内",
+      "metric": "ASR",
+      "ref": "RNTME-NAE",
+      "other": "I-FGSM",
+      "delta_pp": 0.0,
+      "W": 0.0,
+      "p_raw": 1.0,
+      "p_bonf": 1.0,
+      "signif_bonf": false,
+      "n_pairs": 8
+    },
+    {
+      "target": "sresnet",
+      "role": "集成内",
+      "metric": "SW-ASR",
+      "ref": "RNTME-NAE",
+      "other": "I-FGSM",
+      "delta_pp": 10.0,
+      "W": 0.0,
+      "p_raw": 0.10880943004054568,
+      "p_bonf": 0.4352377201621827,
+      "signif_bonf": false,
+      "n_pairs": 8
+    },
+    {
+      "target": "svgg",
+      "role": "集成内",
+      "metric": "ASR",
+      "ref": "RNTME-NAE",
+      "other": "I-FGSM",
+      "delta_pp": 50.0,
+      "W": 0.0,
+      "p_raw": 0.04550026389635839,
+      "p_bonf": 0.18200105558543356,
+      "signif_bonf": false,
+      "n_pairs": 8
+    },
+    {
+      "target": "svgg",
+      "role": "集成内",
+      "metric": "SW-ASR",
+      "ref": "RNTME-NAE",
+      "other": "I-FGSM",
+      "delta_pp": 25.0,
+      "W": 3.5,
+      "p_raw": 0.13113050286965086,
+      "p_bonf": 0.5245220114786034,
+      "signif_bonf": false,
+      "n_pairs": 8
+    }
+  ]
+}

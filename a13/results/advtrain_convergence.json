@@ -1,0 +1,55 @@
+{
+ "note": "对抗训练在 CPU 试点上的收敛性诊断。未得到可用模型，因此不报告攻击结论。",
+ "clean_baseline_same_subset": 0.945,
+ "attempts": [
+  {
+   "lr": 0.05,
+   "epochs": 5,
+   "subset": 12000,
+   "freeze_bn": false,
+   "ep1_clean": 0.282,
+   "verdict": "学习率过大，梯度噪声下每步更新过猛"
+  },
+  {
+   "lr": 0.02,
+   "epochs": 6,
+   "subset": 8000,
+   "freeze_bn": false,
+   "ep1_clean": 0.172,
+   "verdict": "降低学习率仍不足，轮数不够"
+  },
+  {
+   "lr": 0.02,
+   "epochs": 6,
+   "subset": 8000,
+   "freeze_bn": true,
+   "ep1_clean": 0.052,
+   "verdict": "冻结的 BN 统计来自未训练权重，方向错误，更差"
+  }
+ ],
+ "curve": {
+  "steps": [
+   15,
+   30,
+   45,
+   60
+  ],
+  "eps0": [
+   0.07,
+   0.22,
+   0.377,
+   0.465
+  ],
+  "eps8": [
+   0.102,
+   0.142,
+   0.187,
+   0.195
+  ],
+  "subset": 3999,
+  "bs": 128,
+  "lr": 0.02,
+  "pgd_steps": 3
+ },
+ "eps_train": 0.03137254901960784
+}

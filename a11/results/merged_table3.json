@@ -1,0 +1,245 @@
+{
+  "rows": [
+    {
+      "method": "I-FGSM",
+      "ens": 72.0,
+      "ens_std": 0.0,
+      "unseen": 41.33333333333333,
+      "unseen_std": 6.2063353831181824e-15,
+      "cond": 35.294117647058826,
+      "cond_std": 0.0,
+      "sw": 22.199999999999996,
+      "sw_std": 0.0,
+      "dmr": 8.666666666666668,
+      "dmr_std": 0.0,
+      "ms": 818.2901379267374
+    },
+    {
+      "method": "MI-FGSM",
+      "ens": 72.33333333333334,
+      "ens_std": 0.0,
+      "unseen": 42.666666666666664,
+      "unseen_std": 6.2063353831181824e-15,
+      "cond": 36.76470588235294,
+      "cond_std": 0.0,
+      "sw": 23.53333333333333,
+      "sw_std": 0.0,
+      "dmr": 10.0,
+      "dmr_std": 0.0,
+      "ms": 785.2051916122435
+    },
+    {
+      "method": "NAE",
+      "ens": 72.33333333333334,
+      "ens_std": 0.0,
+      "unseen": 41.33333333333333,
+      "unseen_std": 6.2063353831181824e-15,
+      "cond": 35.294117647058826,
+      "cond_std": 0.0,
+      "sw": 22.866666666666667,
+      "sw_std": 0.0,
+      "dmr": 10.0,
+      "dmr_std": 0.0,
+      "ms": 774.2764841715494
+    },
+    {
+      "method": "DI-NI-FGSM",
+      "ens": 69.4,
+      "ens_std": 0.596284793999943,
+      "unseen": 44.39999999999999,
+      "unseen_std": 1.4605934866804422,
+      "cond": 38.82352941176471,
+      "cond_std": 1.5940796609322634,
+      "sw": 23.586666666666662,
+      "sw_std": 0.3444802848737023,
+      "dmr": 8.266666666666667,
+      "dmr_std": 0.7601169500660921,
+      "ms": 783.1359771092733
+    },
+    {
+      "method": "RNTME-EQ",
+      "ens": 74.33333333333333,
+      "ens_std": 0.33333333333332993,
+      "unseen": 44.93333333333333,
+      "unseen_std": 0.5962847939999428,
+      "cond": 39.70588235294118,
+      "cond_std": 0.5199314567548144,
+      "sw": 21.04,
+      "sw_std": 0.4633213427705089,
+      "dmr": 6.533333333333332,
+      "dmr_std": 0.298142396999972,
+      "ms": 6897.423774083455
+    },
+    {
+      "method": "RNTME-NAE",
+      "ens": 74.46666666666667,
+      "ens_std": 0.18257418583505047,
+      "unseen": 44.800000000000004,
+      "unseen_std": 1.0954451150103317,
+      "cond": 39.852941176470594,
+      "cond_std": 1.2082115239084552,
+      "sw": 21.06666666666667,
+      "sw_std": 0.8313309275559957,
+      "dmr": 6.933333333333333,
+      "dmr_std": 0.3651483716701108,
+      "ms": 6574.092472394307
+    },
+    {
+      "method": "ADMIX",
+      "ens": 74.0,
+      "ens_std": 0.3333333333333355,
+      "unseen": 43.33333333333334,
+      "unseen_std": 1.0540925533894594,
+      "cond": 38.23529411764706,
+      "cond_std": 1.1626020809442557,
+      "sw": 22.493333333333336,
+      "sw_std": 0.5974017817925291,
+      "dmr": 8.133333333333333,
+      "dmr_std": 1.0954451150103324,
+      "ms": 1342.888203938802
+    },
+    {
+      "method": "SGM",
+      "ens": 67.66666666666667,
+      "ens_std": 0.0,
+      "unseen": 40.0,
+      "unseen_std": 0.0,
+      "cond": 34.55882352941176,
+      "cond_std": 0.0,
+      "sw": 20.0,
+      "sw_std": 0.0,
+      "dmr": 6.0,
+      "dmr_std": 0.0,
+      "ms": 263.4253225326538
+    }
+  ],
+  "tests": [
+    {
+      "ref": "RNTME-NAE",
+      "other": "I-FGSM",
+      "metric": "ASR",
+      "delta_pp": 3.4666666666666663,
+      "p_raw": 0.21339107947090696,
+      "p_bonf": 1.0,
+      "signif": false
+    },
+    {
+      "ref": "RNTME-NAE",
+      "other": "I-FGSM",
+      "metric": "SW-ASR",
+      "delta_pp": -1.1333333333333333,
+      "p_raw": 0.7069181168273533,
+      "p_bonf": 1.0,
+      "signif": false
+    },
+    {
+      "ref": "RNTME-NAE",
+      "other": "MI-FGSM",
+      "metric": "ASR",
+      "delta_pp": 2.1333333333333337,
+      "p_raw": 0.348897326187954,
+      "p_bonf": 1.0,
+      "signif": false
+    },
+    {
+      "ref": "RNTME-NAE",
+      "other": "MI-FGSM",
+      "metric": "SW-ASR",
+      "delta_pp": -2.466666666666667,
+      "p_raw": 0.23114337963535492,
+      "p_bonf": 1.0,
+      "signif": false
+    },
+    {
+      "ref": "RNTME-NAE",
+      "other": "NAE",
+      "metric": "ASR",
+      "delta_pp": 3.4666666666666663,
+      "p_raw": 0.17004759075659415,
+      "p_bonf": 1.0,
+      "signif": false
+    },
+    {
+      "ref": "RNTME-NAE",
+      "other": "NAE",
+      "metric": "SW-ASR",
+      "delta_pp": -1.8000000000000003,
+      "p_raw": 0.3553311754498216,
+      "p_bonf": 1.0,
+      "signif": false
+    },
+    {
+      "ref": "RNTME-NAE",
+      "other": "DI-NI-FGSM",
+      "metric": "ASR",
+      "delta_pp": 0.4000000000000001,
+      "p_raw": 0.937196606218774,
+      "p_bonf": 1.0,
+      "signif": false
+    },
+    {
+      "ref": "RNTME-NAE",
+      "other": "DI-NI-FGSM",
+      "metric": "SW-ASR",
+      "delta_pp": -2.52,
+      "p_raw": 0.055863684777602986,
+      "p_bonf": 0.7820915868864418,
+      "signif": false
+    },
+    {
+      "ref": "RNTME-NAE",
+      "other": "RNTME-EQ",
+      "metric": "ASR",
+      "delta_pp": -0.1333333333333332,
+      "p_raw": 0.8399914539372596,
+      "p_bonf": 1.0,
+      "signif": false
+    },
+    {
+      "ref": "RNTME-NAE",
+      "other": "RNTME-EQ",
+      "metric": "SW-ASR",
+      "delta_pp": 0.026666666666666804,
+      "p_raw": 0.9913661867517279,
+      "p_bonf": 1.0,
+      "signif": false
+    },
+    {
+      "ref": "RNTME-NAE",
+      "other": "ADMIX",
+      "metric": "ASR",
+      "delta_pp": 1.4666666666666672,
+      "p_raw": 0.48225632593602596,
+      "p_bonf": 1.0,
+      "signif": false
+    },
+    {
+      "ref": "RNTME-NAE",
+      "other": "ADMIX",
+      "metric": "SW-ASR",
+      "delta_pp": -1.426666666666667,
+      "p_raw": 0.22742234607485168,
+      "p_bonf": 1.0,
+      "signif": false
+    },
+    {
+      "ref": "RNTME-NAE",
+      "other": "SGM",
+      "metric": "ASR",
+      "delta_pp": 4.8,
+      "p_raw": 0.0498464874954221,
+      "p_bonf": 0.6978508249359094,
+      "signif": false
+    },
+    {
+      "ref": "RNTME-NAE",
+      "other": "SGM",
+      "metric": "SW-ASR",
+      "delta_pp": 1.0666666666666669,
+      "p_raw": 0.5497750491642189,
+      "p_bonf": 1.0,
+      "signif": false
+    }
+  ],
+  "n": 150
+}

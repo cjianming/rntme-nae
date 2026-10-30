@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+
+# Local run artifacts
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Datasets are not redistributed here — download separately, see README "Data"
+data/
+
+# Environments
+.venv/
+venv/
+env/

@@ -1,0 +1,58 @@
+设备 cpu | 集成 ['sresnet', 'svgg', 'ssep'] | 未见 ['sinc'] | 输入 32px
+  模型 sresnet=0.62M svgg=0.59M ssep=0.13M sinc=0.40M
+    缓存 600 张 32px 图，用时 1.6s，占用 2 MB
+  [clean] none       sresnet=0.945 svgg=0.970 ssep=0.908 sinc=0.962
+  [clean] jpeg75     sresnet=0.945 svgg=0.965 ssep=0.892 sinc=0.957
+  [clean] jpeg50     sresnet=0.940 svgg=0.953 ssep=0.890 sinc=0.948
+  [clean] jpeg420    sresnet=0.933 svgg=0.965 ssep=0.872 sinc=0.950
+  [clean] bit4       sresnet=0.942 svgg=0.957 ssep=0.890 sinc=0.948
+  [clean] bit3       sresnet=0.912 svgg=0.925 ssep=0.848 sinc=0.888
+  [clean] blur10     sresnet=0.945 svgg=0.957 ssep=0.878 sinc=0.932
+  [clean] randpad    sresnet=0.930 svgg=0.947 ssep=0.865 sinc=0.942
+  [clean] gamma06    sresnet=0.935 svgg=0.963 ssep=0.840 sinc=0.940
+  [clean] dehaze     sresnet=0.912 svgg=0.938 ssep=0.875 sinc=0.917
+
+== 汇总（ASR，括号内为 ASR_rel）==
+防御        攻击                        集成内              未见
+none      I-FGSM       0.474(0.441)     0.348(0.322)
+none      NAE          0.468(0.435)     0.348(0.322)
+none      DI-NI-FGSM   0.448(0.414)     0.348(0.322)
+none      RNTME-NAE    0.634(0.613)     0.343(0.317)
+jpeg75    I-FGSM       0.454(0.414)     0.355(0.326)
+jpeg75    NAE          0.451(0.411)     0.372(0.343)
+jpeg75    DI-NI-FGSM   0.433(0.392)     0.355(0.326)
+jpeg75    RNTME-NAE    0.627(0.602)     0.370(0.341)
+jpeg50    I-FGSM       0.447(0.401)     0.345(0.309)
+jpeg50    NAE          0.441(0.395)     0.375(0.341)
+jpeg50    DI-NI-FGSM   0.437(0.391)     0.358(0.323)
+jpeg50    RNTME-NAE    0.615(0.586)     0.383(0.350)
+jpeg420   I-FGSM       0.442(0.394)     0.373(0.340)
+jpeg420   NAE          0.443(0.396)     0.383(0.351)
+jpeg420   DI-NI-FGSM   0.437(0.390)     0.377(0.344)
+jpeg420   RNTME-NAE    0.607(0.576)     0.378(0.346)
+bit4      I-FGSM       0.472(0.430)     0.385(0.351)
+bit4      NAE          0.477(0.435)     0.380(0.346)
+bit4      DI-NI-FGSM   0.459(0.417)     0.372(0.337)
+bit4      RNTME-NAE    0.641(0.615)     0.372(0.337)
+bit3      I-FGSM       0.464(0.398)     0.362(0.281)
+bit3      NAE          0.458(0.391)     0.357(0.276)
+bit3      DI-NI-FGSM   0.446(0.378)     0.353(0.272)
+bit3      RNTME-NAE    0.612(0.568)     0.373(0.295)
+blur10    I-FGSM       0.405(0.355)     0.272(0.218)
+blur10    NAE          0.399(0.349)     0.280(0.227)
+blur10    DI-NI-FGSM   0.406(0.357)     0.282(0.229)
+blur10    RNTME-NAE    0.655(0.629)     0.415(0.372)
+randpad   I-FGSM       0.423(0.366)     0.325(0.283)
+randpad   NAE          0.423(0.367)     0.323(0.281)
+randpad   DI-NI-FGSM   0.419(0.363)     0.335(0.294)
+randpad   RNTME-NAE    0.606(0.570)     0.353(0.313)
+gamma06   I-FGSM       0.468(0.414)     0.383(0.344)
+gamma06   NAE          0.472(0.418)     0.397(0.358)
+gamma06   DI-NI-FGSM   0.463(0.410)     0.388(0.349)
+gamma06   RNTME-NAE    0.586(0.546)     0.375(0.335)
+dehaze    I-FGSM       0.502(0.452)     0.460(0.411)
+dehaze    NAE          0.508(0.459)     0.477(0.429)
+dehaze    DI-NI-FGSM   0.496(0.446)     0.453(0.404)
+dehaze    RNTME-NAE    0.636(0.601)     0.412(0.358)
+
+写出 C:\Users\Administrator\WorkBuddy\paper\a13\results\a3_defense.csv

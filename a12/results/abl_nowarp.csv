@@ -1,0 +1,3 @@
+﻿attack,detector,role,mAP_clean,mAP_adv,d_mAP,drop_pct,ndet_clean,ndet_adv,sec_gen,MR_clean,MR_adv,dMR
+RNTME-NAE,ssdlite_a,集成内,0.7555,0.1630,0.5925,78.4282,623,1440,12.2456,0.3333,0.7778,0.4444
+RNTME-NAE,ssdlite_b,集成内,0.8037,0.2429,0.5609,69.7830,384,753,12.2456,0.3333,0.6667,0.3333

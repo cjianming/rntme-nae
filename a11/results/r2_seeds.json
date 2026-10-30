@@ -1,0 +1,219 @@
+{
+  "config": {
+    "mode": "seeds",
+    "size": 64,
+    "n": 150,
+    "bs": 32,
+    "T": 15,
+    "eps255": 16,
+    "alpha255": 2,
+    "mu": 0.9,
+    "B": 5,
+    "tau": 2.0,
+    "beta": 0.7,
+    "sigma": 3.0,
+    "ensemble": "sresnet,svgg",
+    "heldout": "ssep",
+    "source": "sresnet",
+    "seeds": "0,1,2,3,4",
+    "attacks": "ADMIX,SGM",
+    "tscan": "5,8,11,15",
+    "out": "r2"
+  },
+  "clean_acc": {
+    "sresnet": 0.8866666666666667,
+    "svgg": 0.9733333333333334,
+    "ssep": 0.9066666666666666
+  },
+  "n_samples": 150,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "attacks": [
+    "ADMIX",
+    "SGM"
+  ],
+  "ensemble": [
+    "sresnet",
+    "svgg"
+  ],
+  "heldout": [
+    "ssep"
+  ],
+  "rows": [
+    {
+      "attack": "ADMIX",
+      "target": "sresnet",
+      "role": "集成内",
+      "clean_acc": 0.8866666666666667,
+      "ASR": 1.0,
+      "ASR_std": 0.0,
+      "SW-ASR": 0.5624,
+      "SW-ASR_std": 0.010505025252494919,
+      "DMR": 0.2666666666666667,
+      "DMR_std": 0.015634719199411434,
+      "ASR_cond": 1.0,
+      "ASR_cond_std": 0.0,
+      "ms": 1342.888203938802
+    },
+    {
+      "attack": "ADMIX",
+      "target": "svgg",
+      "role": "集成内",
+      "clean_acc": 0.9733333333333334,
+      "ASR": 0.4800000000000001,
+      "ASR_std": 0.006666666666666653,
+      "SW-ASR": 0.24946666666666664,
+      "SW-ASR_std": 0.010321498599202207,
+      "DMR": 0.09466666666666668,
+      "DMR_std": 0.012823589374447561,
+      "ASR_cond": 0.4657534246575342,
+      "ASR_cond_std": 0.00684931506849315,
+      "ms": 1342.888203938802
+    },
+    {
+      "attack": "ADMIX",
+      "target": "ssep",
+      "role": "未见",
+      "clean_acc": 0.9066666666666666,
+      "ASR": 0.4333333333333334,
+      "ASR_std": 0.010540925533894577,
+      "SW-ASR": 0.22493333333333335,
+      "SW-ASR_std": 0.005974017817925279,
+      "DMR": 0.08133333333333333,
+      "DMR_std": 0.010954451150103324,
+      "ASR_cond": 0.38235294117647056,
+      "ASR_cond_std": 0.011626020809442557,
+      "ms": 1342.888203938802
+    },
+    {
+      "attack": "SGM",
+      "target": "sresnet",
+      "role": "集成内",
+      "clean_acc": 0.8866666666666667,
+      "ASR": 0.9933333333333334,
+      "ASR_std": 1.2412670766236366e-16,
+      "SW-ASR": 0.568,
+      "SW-ASR_std": 0.0,
+      "DMR": 0.29333333333333333,
+      "DMR_std": 0.0,
+      "ASR_cond": 0.9924812030075187,
+      "ASR_cond_std": 0.0,
+      "ms": 263.4253225326538
+    },
+    {
+      "attack": "SGM",
+      "target": "svgg",
+      "role": "集成内",
+      "clean_acc": 0.9733333333333334,
+      "ASR": 0.36,
+      "ASR_std": 0.0,
+      "SW-ASR": 0.19533333333333333,
+      "SW-ASR_std": 0.0,
+      "DMR": 0.08,
+      "DMR_std": 0.0,
+      "ASR_cond": 0.3424657534246575,
+      "ASR_cond_std": 0.0,
+      "ms": 263.4253225326538
+    },
+    {
+      "attack": "SGM",
+      "target": "ssep",
+      "role": "未见",
+      "clean_acc": 0.9066666666666666,
+      "ASR": 0.4,
+      "ASR_std": 0.0,
+      "SW-ASR": 0.2,
+      "SW-ASR_std": 0.0,
+      "DMR": 0.06,
+      "DMR_std": 0.0,
+      "ASR_cond": 0.34558823529411764,
+      "ASR_cond_std": 0.0,
+      "ms": 263.4253225326538
+    }
+  ],
+  "tests": [
+    {
+      "target": "sresnet",
+      "role": "集成内",
+      "metric": "ASR",
+      "ref": "ADMIX",
+      "other": "SGM",
+      "delta_pp": 0.6666666666666667,
+      "W": 0.0,
+      "p_raw": 0.31731050786291415,
+      "p_bonf": 1.0,
+      "signif_bonf": false,
+      "n_pairs": 150
+    },
+    {
+      "target": "sresnet",
+      "role": "集成内",
+      "metric": "SW-ASR",
+      "ref": "ADMIX",
+      "other": "SGM",
+      "delta_pp": -0.5599999999999998,
+      "W": 235.5,
+      "p_raw": 0.42120919028309,
+      "p_bonf": 1.0,
+      "signif_bonf": false,
+      "n_pairs": 150
+    },
+    {
+      "target": "svgg",
+      "role": "集成内",
+      "metric": "ASR",
+      "ref": "ADMIX",
+      "other": "SGM",
+      "delta_pp": 12.0,
+      "W": 0.0,
+      "p_raw": 2.9795391302629434e-05,
+      "p_bonf": 0.00017877234781577662,
+      "signif_bonf": true,
+      "n_pairs": 150
+    },
+    {
+      "target": "svgg",
+      "role": "集成内",
+      "metric": "SW-ASR",
+      "ref": "ADMIX",
+      "other": "SGM",
+      "delta_pp": 5.413333333333334,
+      "W": 225.0,
+      "p_raw": 0.0016168042046024232,
+      "p_bonf": 0.00970082522761454,
+      "signif_bonf": true,
+      "n_pairs": 150
+    },
+    {
+      "target": "ssep",
+      "role": "未见",
+      "metric": "ASR",
+      "ref": "ADMIX",
+      "other": "SGM",
+      "delta_pp": 3.3333333333333335,
+      "W": 56.0,
+      "p_raw": 0.11276127554494517,
+      "p_bonf": 0.6765676532696709,
+      "signif_bonf": false,
+      "n_pairs": 150
+    },
+    {
+      "target": "ssep",
+      "role": "未见",
+      "metric": "SW-ASR",
+      "ref": "ADMIX",
+      "other": "SGM",
+      "delta_pp": 2.4933333333333336,
+      "W": 178.5,
+      "p_raw": 0.04185028655600545,
+      "p_bonf": 0.2511017193360327,
+      "signif_bonf": false,
+      "n_pairs": 150
+    }
+  ]
+}

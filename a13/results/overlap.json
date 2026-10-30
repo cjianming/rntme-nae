@@ -1,0 +1,43 @@
+{
+ "note": "未见目标 sinc 上不同攻击的「错判模式一致率」：两者在同一样本上是否同时判错。1.0 表示可翻转的样本集合完全相同。",
+ "target": "sinc",
+ "n": 600,
+ "pairs": [
+  [
+   "I-FGSM",
+   "NAE",
+   0.9767
+  ],
+  [
+   "I-FGSM",
+   "DI-NI-FGSM",
+   0.9467
+  ],
+  [
+   "NAE",
+   "DI-NI-FGSM",
+   0.9633
+  ],
+  [
+   "I-FGSM",
+   "RNTME-NAE",
+   0.895
+  ],
+  [
+   "NAE",
+   "RNTME-NAE",
+   0.9017
+  ],
+  [
+   "DI-NI-FGSM",
+   "RNTME-NAE",
+   0.9083
+  ]
+ ],
+ "asr": {
+  "I-FGSM": 0.3483,
+  "NAE": 0.3483,
+  "DI-NI-FGSM": 0.3483,
+  "RNTME-NAE": 0.3433
+ }
+}

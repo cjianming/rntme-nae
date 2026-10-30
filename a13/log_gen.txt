@@ -1,0 +1,10 @@
+设备 cpu | 集成 ['sresnet', 'svgg', 'ssep'] | 未见 ['sinc'] | 输入 32px
+  模型 sresnet=0.62M svgg=0.59M ssep=0.13M sinc=0.40M
+    缓存 600 张 32px 图，用时 2.0s，占用 2 MB
+  [gen] a3_plain        I-FGSM      600 张   43.7s ( 72.8 ms/张) -> a3_plain_I-FGSM.npz
+  [gen] a3_plain        NAE         600 张   48.2s ( 80.3 ms/张) -> a3_plain_NAE.npz
+  [gen] a3_plain        DI-NI-FGSM  600 张   47.4s ( 79.0 ms/张) -> a3_plain_DI-NI-FGSM.npz
+  [gen] a3_plain        RNTME-NAE   600 张  390.5s (650.8 ms/张) -> a3_plain_RNTME-NAE.npz
+设备 cpu | 集成 ['sresnet', 'svgg', 'ssep'] | 未见 ['sinc'] | 输入 32px
+  模型 sresnet=0.62M svgg=0.59M ssep=0.13M sinc=0.40M
+    缓存 600 张 32px 图，用时 1.5s，占用 2 MB

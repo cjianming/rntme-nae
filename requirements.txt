@@ -1,0 +1,13 @@
+# Core — required by every module
+torch>=2.13
+numpy>=2.0
+scipy>=1.11
+
+# a12 (object detection) loads its detectors and the VOC split through torchvision.
+# Install the build matching your torch version: https://pypi.org/project/torchvision/
+torchvision
+
+# Reporting helpers only (a1*/make_figures.py, make_report.py)
+matplotlib>=3.8
+pillow>=10.0
+python-docx>=1.1

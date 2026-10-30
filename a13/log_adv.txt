@@ -1,0 +1,5 @@
+对抗训练 sresnet 32px | eps=8/255 alpha=6.67/255 steps=3 | 6 epoch
+    缓存 8000 张 32px 图，用时 19.5s，占用 25 MB
+    缓存 600 张 32px 图，用时 2.9s，占用 2 MB
+  已用干净数据校准并冻结 12 个 BN 层
+  ep 01/6  adv_acc 0.064  clean 0.052  170s

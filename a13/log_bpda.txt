@@ -1,0 +1,5 @@
+设备 cpu | 集成 ['sresnet', 'svgg', 'ssep'] | 未见 ['sinc'] | 输入 32px
+  模型 sresnet=0.62M svgg=0.59M ssep=0.13M sinc=0.40M
+    缓存 298 张 32px 图，用时 1.2s，占用 1 MB
+  [gen] a3_bpda_jpeg75  RNTME-NAE   298 张  250.6s (841.0 ms/张) -> a3_bpda_jpeg75_RNTME-NAE.npz
+  [gen] a3_bpda_bit4    RNTME-NAE   298 张  192.1s (644.8 ms/张) -> a3_bpda_bit4_RNTME-NAE.npz

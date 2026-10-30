@@ -1,0 +1,49 @@
+[1/4] synth: 60 张 / 126 个目标 / 类 [1, 2, 3, 4, 5]
+[2/4] 构建检测器
+  [det] ssdlite_a        2.3M  1.0s (ssdlite_a.pt)
+  [det] ssdlite_b        2.3M  0.7s (ssdlite_b.pt)
+  [det] frcnn_mnv3      19.0M  1.1s (frcnn_mnv3.pt)
+[3/4] 干净基线
+      ssdlite_a      mAP@0.5=0.7198  R[限速]=0.714  R[禁令]=0.571  R[警告]=0.759  R[指示]=0.636  R[优先通行]=0.545
+      ssdlite_b      mAP@0.5=0.7639  R[限速]=0.714  R[禁令]=0.571  R[警告]=0.621  R[指示]=0.682  R[优先通行]=0.606
+      frcnn_mnv3     mAP@0.5=0.8795  R[限速]=0.905  R[禁令]=1.000  R[警告]=0.862  R[指示]=0.909  R[优先通行]=0.545
+[4/4] 攻击与评估
+      I-FGSM 生成 10/60  21s
+      I-FGSM 生成 20/60  39s
+      I-FGSM 生成 30/60  59s
+      I-FGSM 生成 40/60  81s
+      I-FGSM 生成 50/60  100s
+      I-FGSM 生成 60/60  119s
+      I-FGSM      ssdlite_a      mAP 0.720->0.022 ( 96.9%)  漏检 0.286->1.000  1.98s/图
+      I-FGSM      ssdlite_b      mAP 0.764->0.611 ( 20.0%)  漏检 0.286->0.286  1.98s/图
+      I-FGSM      frcnn_mnv3     mAP 0.879->0.812 (  7.7%)  漏检 0.095->0.143  1.98s/图
+      NAE 生成 10/60  20s
+      NAE 生成 20/60  40s
+      NAE 生成 30/60  60s
+      NAE 生成 40/60  79s
+      NAE 生成 50/60  101s
+      NAE 生成 60/60  121s
+      NAE         ssdlite_a      mAP 0.720->0.025 ( 96.5%)  漏检 0.286->1.000  2.02s/图
+      NAE         ssdlite_b      mAP 0.764->0.457 ( 40.2%)  漏检 0.286->0.429  2.02s/图
+      NAE         frcnn_mnv3     mAP 0.879->0.741 ( 15.8%)  漏检 0.095->0.238  2.02s/图
+      DI-NI-FGSM 生成 10/60  23s
+      DI-NI-FGSM 生成 20/60  42s
+      DI-NI-FGSM 生成 30/60  64s
+      DI-NI-FGSM 生成 40/60  84s
+      DI-NI-FGSM 生成 50/60  104s
+      DI-NI-FGSM 生成 60/60  124s
+      DI-NI-FGSM  ssdlite_a      mAP 0.720->0.338 ( 53.0%)  漏检 0.286->0.619  2.07s/图
+      DI-NI-FGSM  ssdlite_b      mAP 0.764->0.647 ( 15.3%)  漏检 0.286->0.381  2.07s/图
+      DI-NI-FGSM  frcnn_mnv3     mAP 0.879->0.775 ( 11.8%)  漏检 0.095->0.238  2.07s/图
+      RNTME-NAE 生成 10/60  123s
+      RNTME-NAE 生成 20/60  242s
+      RNTME-NAE 生成 30/60  367s
+      RNTME-NAE 生成 40/60  493s
+      RNTME-NAE 生成 50/60  624s
+      RNTME-NAE 生成 60/60  750s
+      RNTME-NAE   ssdlite_a      mAP 0.720->0.075 ( 89.6%)  漏检 0.286->0.762  12.49s/图
+      RNTME-NAE   ssdlite_b      mAP 0.764->0.102 ( 86.7%)  漏检 0.286->0.762  12.49s/图
+      RNTME-NAE   frcnn_mnv3     mAP 0.879->0.719 ( 18.3%)  漏检 0.095->0.143  12.49s/图
+
+明细 C:\Users\Administrator\WorkBuddy\paper\a12\results\pilot.csv
+汇总 C:\Users\Administrator\WorkBuddy\paper\a12\results\pilot_summary.json

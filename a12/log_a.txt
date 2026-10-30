@@ -1,0 +1,68 @@
+[数据] 合成 400 训练 / 100 验证
+       训练 400 张，验证 100 张
+[模型] ssdlite，6 类
+C:\Users\Administrator\WorkBuddy\paper\a12\train.py:157: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:821.)
+  if (i + 1) % 20 == 0:
+  ep1 20/200 loss=7.422 18s
+  ep1 40/200 loss=7.321 38s
+  ep1 60/200 loss=7.139 58s
+  ep1 80/200 loss=6.997 78s
+  ep1 100/200 loss=6.853 97s
+  ep1 120/200 loss=6.695 117s
+  ep1 140/200 loss=6.546 136s
+  ep1 160/200 loss=6.404 155s
+  ep1 180/200 loss=6.267 173s
+  ep1 200/200 loss=6.141 192s
+[ep1] loss=6.141 mAP@0.5=0.1861 (206s) {'限速': 0.244, '禁令': 0.0, '警告': 0.387, '指示': 0.016, '优先通行': 0.283}
+       已保存 a12/chk/ssdlite_a.pt（mAP 0.1861）
+  ep2 20/200 loss=4.882 18s
+  ep2 40/200 loss=4.818 36s
+  ep2 60/200 loss=4.742 54s
+  ep2 80/200 loss=4.688 70s
+  ep2 100/200 loss=4.603 87s
+  ep2 120/200 loss=4.542 104s
+  ep2 140/200 loss=4.442 124s
+  ep2 160/200 loss=4.397 143s
+  ep2 180/200 loss=4.339 160s
+  ep2 200/200 loss=4.262 178s
+[ep2] loss=4.262 mAP@0.5=0.4045 (190s) {'限速': 0.444, '禁令': 0.255, '警告': 0.5, '指示': 0.308, '优先通行': 0.516}
+       已保存 a12/chk/ssdlite_a.pt（mAP 0.4045）
+  ep3 20/200 loss=3.388 16s
+  ep3 40/200 loss=3.407 32s
+  ep3 60/200 loss=3.322 51s
+  ep3 80/200 loss=3.257 69s
+  ep3 100/200 loss=3.254 86s
+  ep3 120/200 loss=3.212 102s
+  ep3 140/200 loss=3.233 119s
+  ep3 160/200 loss=3.201 135s
+  ep3 180/200 loss=3.164 152s
+  ep3 200/200 loss=3.126 168s
+[ep3] loss=3.126 mAP@0.5=0.5623 (180s) {'限速': 0.707, '禁令': 0.399, '警告': 0.501, '指示': 0.571, '优先通行': 0.634}
+       已保存 a12/chk/ssdlite_a.pt（mAP 0.5623）
+  ep4 20/200 loss=2.673 16s
+  ep4 40/200 loss=2.591 35s
+  ep4 60/200 loss=2.533 53s
+  ep4 80/200 loss=2.533 69s
+  ep4 100/200 loss=2.486 85s
+  ep4 120/200 loss=2.451 102s
+  ep4 140/200 loss=2.449 117s
+  ep4 160/200 loss=2.449 134s
+  ep4 180/200 loss=2.425 151s
+  ep4 200/200 loss=2.400 179s
+[ep4] loss=2.400 mAP@0.5=0.7513 (192s) {'限速': 0.815, '禁令': 0.669, '警告': 0.643, '指示': 0.827, '优先通行': 0.804}
+       已保存 a12/chk/ssdlite_a.pt（mAP 0.7513）
+  ep5 20/200 loss=1.960 16s
+  ep5 40/200 loss=1.936 33s
+  ep5 60/200 loss=1.918 50s
+  ep5 80/200 loss=1.900 66s
+  ep5 100/200 loss=1.890 83s
+  ep5 120/200 loss=1.884 102s
+  ep5 140/200 loss=1.867 120s
+  ep5 160/200 loss=1.878 136s
+  ep5 180/200 loss=1.896 152s
+  ep5 200/200 loss=1.897 167s
+[ep5] loss=1.897 mAP@0.5=0.7849 (179s) {'限速': 0.866, '禁令': 0.786, '警告': 0.627, '指示': 0.849, '优先通行': 0.796}
+       已保存 a12/chk/ssdlite_a.pt（mAP 0.7849）
+
+完成。最佳 val mAP@0.5 = 0.7849 -> a12/chk/ssdlite_a.pt

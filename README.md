@@ -214,5 +214,40 @@ metadata is in [CITATION.cff](CITATION.cff).
 }
 ```
 
-> Repository metadata in `CITATION.cff` and the badge URLs above contain the placeholder
-> `<owner>` — replace it with your GitHub account before the first push.
+### Archiving and DOI
+
+For a citable snapshot, the release is archived on Zenodo, which issues a DOI:
+
+```bibtex
+@software{cui2026rntme,
+  title  = {RNTME-NAE: reference implementation of a task-level evaluation
+            protocol for black-box attacks on vehicular perception},
+  author = {Cui, Jianming and Liu, Ming},
+  year   = {2026},
+  doi    = {10.5281/zenodo.XXXXXXX},   % version DOI — replace after archiving
+  license= {MIT}
+}
+```
+
+Zenodo issues two identifiers and **a paper must cite the version DOI**, not the concept DOI:
+
+| DOI | Points to | Cite it |
+|:---|:---|:---|
+| Version DOI | one frozen release (`v1.0.0`) | in the paper — pins the exact code that produced the results |
+| Concept DOI | always the newest version | in a README or slide — for "the software" generally |
+
+To mint one, log in to [zenodo.org](https://zenodo.org) with GitHub, enable this repository under
+Zenodo's GitHub settings, then publish a GitHub Release. Zenodo persists a snapshot and assigns the DOI
+within minutes. The repository must be public, and only these four things may change afterwards: a new
+release gets its own DOI, so anything already published stays reproducible.
+
+Archiving can also be done without GitHub, by uploading an archive directly — useful for GitLab-hosted
+or air-gapped code:
+
+```bash
+git tag -a v1.0.0 -m "First archived release"
+git archive --format=zip --prefix=rntme-nae-v1.0.0/ -o zenodo_upload_v1.0.0.zip v1.0.0
+```
+
+> Repository metadata in `CITATION.cff` and the badge URLs contain the placeholder `<owner>`; replace
+> it with your GitHub account before the first push, and replace the Zenodo DOI above once it exists.

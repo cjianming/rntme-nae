@@ -12,7 +12,7 @@ abstract: >-
   eight methods fall inside a narrow band and no comparison survives correction.
 license: MIT
 type: software
-repository-code: "https://github.com/<owner>/rntme-nae"
+repository-code: "https://github.com/cjianming/rntme-nae"
 keywords:
   - adversarial examples
   - transferability

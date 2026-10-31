@@ -249,5 +249,6 @@ git tag -a v1.0.0 -m "First archived release"
 git archive --format=zip --prefix=rntme-nae-v1.0.0/ -o zenodo_upload_v1.0.0.zip v1.0.0
 ```
 
-> Repository metadata in `CITATION.cff` and the badge URLs contain the placeholder `<owner>`; replace
-> it with your GitHub account before the first push, and replace the Zenodo DOI above once it exists.
+> Two placeholders remain in this repository: `10.5281/zenodo.XXXXXXX` above, to be replaced by the
+> Zenodo **version** DOI once the release is archived. Cite the paper using that version DOI, so the
+> citation pins the code that actually produced the results.

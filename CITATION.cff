@@ -13,6 +13,13 @@ abstract: >-
 license: MIT
 type: software
 repository-code: "https://github.com/cjianming/rntme-nae"
+version: "v1.0.0"
+date-released: "2026-11-02"
+doi: 10.5281/zenodo.23877774
+identifiers:
+  - description: Concept DOI, always points to the newest version
+    type: doi
+    value: 10.5281/zenodo.23877773
 keywords:
   - adversarial examples
   - transferability

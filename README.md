@@ -4,6 +4,7 @@
 
 **A task-level evaluation protocol for black-box attacks on vehicular perception — and its negative result.**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23877774.svg)](https://doi.org/10.5281/zenodo.23877774)
 [![Python 3.14](https://img.shields.io/badge/python-3.14-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![CPU only](https://img.shields.io/badge/hardware-CPU--only-lightgrey.svg)](#environment)
@@ -224,7 +225,7 @@ For a citable snapshot, the release is archived on Zenodo, which issues a DOI:
             protocol for black-box attacks on vehicular perception},
   author = {Cui, Jianming and Liu, Ming},
   year   = {2026},
-  doi    = {10.5281/zenodo.XXXXXXX},   % version DOI — replace after archiving
+  doi    = {10.5281/zenodo.23877774},  % version DOI: freezes v1.0.0
   license= {MIT}
 }
 ```
@@ -249,6 +250,7 @@ git tag -a v1.0.0 -m "First archived release"
 git archive --format=zip --prefix=rntme-nae-v1.0.0/ -o zenodo_upload_v1.0.0.zip v1.0.0
 ```
 
-> Two placeholders remain in this repository: `10.5281/zenodo.XXXXXXX` above, to be replaced by the
-> Zenodo **version** DOI once the release is archived. Cite the paper using that version DOI, so the
-> citation pins the code that actually produced the results.
+> Cite the paper with the **version DOI** [10.5281/zenodo.23877774](https://doi.org/10.5281/zenodo.23877774),
+> which freezes `v1.0.0`, the exact code that produced the published results. The concept DOI
+> [10.5281/zenodo.23877773](https://doi.org/10.5281/zenodo.23877773) always points to the newest
+> version and is meant for a README or slide, not for a citation.
